@@ -156,7 +156,7 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.FIRMWARE_RELEASE == 'true'
       uses: ncipollo/release-action@v1
       with:
-        name: v${{ env.DATE }} for ${{ env.FIRMWARE_TAG }}
+        name: v${{ env.DATE }}_${{ env.FIRMWARE_TAG }}
         tag: ${{ env.RELEASE_TAG }}
         token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: ${{ env.FIRMWARE_PATH }}/*
