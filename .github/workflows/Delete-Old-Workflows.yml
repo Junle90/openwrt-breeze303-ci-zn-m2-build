@@ -4,8 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: 0 3 * * *
-  timezone: Asia/Shanghai
-  
+
 jobs:
   Cleaning:
     runs-on: ubuntu-22.04
