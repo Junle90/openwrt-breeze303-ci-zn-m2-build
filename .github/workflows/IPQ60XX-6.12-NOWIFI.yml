@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: 0 4 * * *
-
+  timezone: Asia/Shanghai
+  
 env:
   REPO_URL: https://github.com/Junle90/openwrt-LiBwrt-6.x-IPQ60XX.git
   REPO_BRANCH: k6.12-nss
