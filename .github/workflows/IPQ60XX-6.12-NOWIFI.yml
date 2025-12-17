@@ -3,7 +3,7 @@ name: IPQ60XX-6.12-NOWIFI
 on:
   workflow_dispatch:
   schedule:
-    - cron: 30 15 * * *
+#    - cron: * * * 12 *
 
 env:
   REPO_URL: https://github.com/Junle90/openwrt-LiBwrt-6.x-IPQ60XX.git
